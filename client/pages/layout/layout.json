@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "router-view": "miniapp-router/router-view/router-view",
+    
+        "button": "/blocks/button/button",
+        "progress": "/blocks/progress/progress"
+    }
+}

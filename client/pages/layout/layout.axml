@@ -1,0 +1,30 @@
+<view class="lb-container">
+    <!-- siderbar -->
+    <view class="lb-sidebar">
+        <!-- side header -->
+        <view class="sider-header">
+            <image mode="widthFix" src="{{app.logo}}" class="logo"/>
+            <text class="app-title">{{app.title}}</text>
+            <text class="app-subtitle">{{app.subTitle}}</text>
+        </view>
+        <!-- menu -->
+        <view class="lb-menu">
+            <view a:for="{{menuData}}" a:for-item="menu" key="{{menu.path}}" data-menu="{{menu}}" class="lb-menu-item {{activeMenu.path == menu.path?'lb-menu-item-active':''}}" onTap="onItemClick">
+                <icon a:if="{{menu.icon}}" class="lb-menu-icon" size="sm" type="{{menu.icon}}"></icon>
+                {{menu.name}} <text class="lb-menu-subtitle">{{menu.subTitle}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="lb-content">
+        <view class="lb-header">
+            <view class="page-title">{{activeMenu.name}}</view>
+            <view class="page-info">{{activeMenu.subTitle}}</view>
+        </view>
+        <view class="lb-body">
+            <router-view>
+                <button slot="button" />
+                <progress slot="progress" />
+            </router-view>
+        </view>
+    </view>
+</view>

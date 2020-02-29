@@ -1,0 +1,106 @@
+.lb-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 14px 20px;
+}
+
+/************************** sidebar start **************************/
+
+.lb-sidebar {
+  width: 200px;
+  background: #fff;
+  margin-right: 20px;
+}
+
+.sider-header {
+  padding: 30px 10px 10px;
+  text-align: center;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 8px;
+}
+
+.app-title {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.app-subtitle {
+  display: block;
+  font-size: 12px;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+/************************** sidebar end **************************/
+
+.lb-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lb-header {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-title{
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.page-info{
+  font-size:16px;
+  color: #bbb;
+}
+
+.lb-body {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+}
+
+/************************** menu start **************************/
+
+
+.lb-menu{
+
+}
+
+.lb-menu-item{
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding: 10px 20px;
+    
+}
+
+.lb-menu-item-active{
+   background-color: #E9F0FE;
+   color:#3E6FE9;
+}
+
+.lb-menu-icon{
+    margin-right:10px; 
+}
+
+.lb-menu-subtitle{
+  margin-left: 8px;
+}
+
+/************************** menu end **************************/
+

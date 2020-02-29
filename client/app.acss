@@ -1,0 +1,12 @@
+page {
+  background: #F1F2F5;
+  color: #333;
+  font-size: 14px;
+  font-family: Microsoft Yahei, PingFangSC-Medium, Avenir, Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+view{
+  box-sizing: border-box;
+}

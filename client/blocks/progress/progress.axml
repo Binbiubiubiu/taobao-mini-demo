@@ -1,0 +1,8 @@
+<view>
+  <view class="com-title">基本进度条</view>
+  <progress percent="30" />
+  <progress percent="50" />
+  <progress percent="90" />
+  <progress percent="40" />
+
+</view>

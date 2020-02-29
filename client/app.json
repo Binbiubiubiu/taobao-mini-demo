@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/layout/layout",
+    "pages/auth/auth",
+    "pages/index/index"
+  ],
+  "window": {
+    "defaultTitle": "小程序demo"
+  }
+}
