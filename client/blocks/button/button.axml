@@ -1,4 +1,4 @@
-<view>
+<view class="page-content">
   <button size="default" type="primary">Button</button>
 
 </view>

@@ -1,6 +1,13 @@
 {
     "usingComponents": {
         "router-view": "miniapp-router/router-view/router-view",
+
+        "layout":"/components/layout/layout",
+        "sider":"/components/sider/sider",
+        "header":"/components/header/header",
+        "content":"/components/content/content",
+        "page-header":"/components/page-header/page-header",
+        "menu":"/components/menu/menu",
     
         "button": "/blocks/button/button",
         "progress": "/blocks/progress/progress"

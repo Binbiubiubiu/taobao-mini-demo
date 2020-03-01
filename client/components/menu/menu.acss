@@ -1,0 +1,24 @@
+.lb-menu{
+
+}
+
+.lb-menu-item{
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding: 10px 20px;
+    
+}
+
+.lb-menu-item-active{
+   background-color: #E9F0FE;
+   color:#3E6FE9;
+}
+
+.lb-menu-icon{
+    margin-right:10px; 
+}
+
+.lb-menu-subtitle{
+  margin-left: 8px;
+}

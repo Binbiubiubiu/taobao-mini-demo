@@ -1,0 +1,9 @@
+.lb-layout {
+  flex:auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.lb-layout-has-sider{
+  flex-direction: row;
+}

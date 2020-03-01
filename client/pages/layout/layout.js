@@ -8,6 +8,7 @@ const app = getApp();
 Page({
   data: {
     app:app.globalData.app,
+    userInfo: {name:"Simon-Bin"}, //app.globalData.userInfo ||
     menuData:mockData,
     activeMenu:mockData[0],
     
@@ -15,8 +16,7 @@ Page({
   onLoad() {
     routerInit.call(this, routerConfig);
   },
-  onItemClick(event) {
-    let { menu } = event.target.dataset;
+  onItemClick(menu) {
    
     this.setData({ activeMenu:menu });
 

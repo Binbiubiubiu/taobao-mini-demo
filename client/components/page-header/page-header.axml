@@ -1,0 +1,4 @@
+ <view class="page-header">
+    <view class="page-title">{{title}}</view>
+    <view class="page-info">{{info}}</view>
+</view>

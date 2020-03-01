@@ -1,0 +1,9 @@
+<view class="lb-spin">
+  <view class="lb-spin-dot">
+    <view class="lb-spin-dot-item"></view>
+    <view class="lb-spin-dot-item"></view>
+    <view class="lb-spin-dot-item"></view>
+    <view class="lb-spin-dot-item"></view>
+  </view>
+  <view a:if="{{text}}" class="lb-spin-text">{{text}}</view>
+</view>

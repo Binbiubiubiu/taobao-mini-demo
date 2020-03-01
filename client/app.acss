@@ -10,3 +10,9 @@ page {
 view{
   box-sizing: border-box;
 }
+
+.page-content{
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+}

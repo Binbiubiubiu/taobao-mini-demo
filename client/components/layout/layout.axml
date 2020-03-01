@@ -1,0 +1,3 @@
+<view class="lb-layout {{hasSider?'lb-layout-has-sider':''}}">
+  <slot/>
+</view>

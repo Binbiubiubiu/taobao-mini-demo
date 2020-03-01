@@ -1,0 +1,14 @@
+.lb-header{
+  position: relative;
+  z-index: 1;
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+  height: 64px;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0,21,41,.08);
+}

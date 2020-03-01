@@ -1,0 +1,7 @@
+<view class="lb-menu">
+  <view a:for="{{dataSource}}" a:for-item="menu" key="{{menu.path}}" data-menu="{{menu}}" class="lb-menu-item {{current.path == menu.path?'lb-menu-item-active':''}}" onTap="handleMenuItemTap">
+    <icon a:if="{{menu.icon}}" class="lb-menu-icon" size="sm" type="{{menu.icon}}"></icon>
+                    {{menu.name}}
+    <text class="lb-menu-subtitle">{{menu.subTitle}}</text>
+  </view>
+</view>

@@ -1,17 +1,21 @@
-.lb-container {
+.top-line{
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 16px rgba(0,21,41,.38);
+}
+
+.app-container{
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 14px 20px;
 }
 
 /************************** sidebar start **************************/
 
-.lb-sidebar {
-  width: 200px;
-  background: #fff;
-  margin-right: 20px;
-}
+
 
 .sider-header {
   padding: 30px 10px 10px;
@@ -39,68 +43,18 @@
 
 /************************** sidebar end **************************/
 
-.lb-content {
-  flex: 1;
+
+.user{
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-.lb-header {
-  width: 100%;
-  height: 100px;
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.user-avator{
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
-.page-title{
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 1.5;
+.user-nickname{
+  font-size: 16px;
 }
-
-.page-info{
-  font-size:16px;
-  color: #bbb;
-}
-
-.lb-body {
-  flex: 1;
-  background: #fff;
-  padding: 20px;
-}
-
-/************************** menu start **************************/
-
-
-.lb-menu{
-
-}
-
-.lb-menu-item{
-    font-size: 16px;
-    line-height: 1.5;
-
-    padding: 10px 20px;
-    
-}
-
-.lb-menu-item-active{
-   background-color: #E9F0FE;
-   color:#3E6FE9;
-}
-
-.lb-menu-icon{
-    margin-right:10px; 
-}
-
-.lb-menu-subtitle{
-  margin-left: 8px;
-}
-
-/************************** menu end **************************/
-

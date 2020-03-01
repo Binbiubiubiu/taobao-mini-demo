@@ -1,30 +1,34 @@
-<view class="lb-container">
-    <!-- siderbar -->
-    <view class="lb-sidebar">
-        <!-- side header -->
-        <view class="sider-header">
-            <image mode="widthFix" src="{{app.logo}}" class="logo"/>
-            <text class="app-title">{{app.title}}</text>
-            <text class="app-subtitle">{{app.subTitle}}</text>
-        </view>
-        <!-- menu -->
-        <view class="lb-menu">
-            <view a:for="{{menuData}}" a:for-item="menu" key="{{menu.path}}" data-menu="{{menu}}" class="lb-menu-item {{activeMenu.path == menu.path?'lb-menu-item-active':''}}" onTap="onItemClick">
-                <icon a:if="{{menu.icon}}" class="lb-menu-icon" size="sm" type="{{menu.icon}}"></icon>
-                {{menu.name}} <text class="lb-menu-subtitle">{{menu.subTitle}}</text>
+<view class="top-line"></view>
+<view class="app-container">
+    <layout hasSider>
+        <!-- siderbar -->
+        <sider>
+            <!-- side header -->
+            <view class="sider-header">
+                <image mode="widthFix" src="{{app.logo}}" class="logo"/>
+                <text class="app-title">{{app.title}}</text>
+                <text class="app-subtitle">{{app.subTitle}}</text>
             </view>
+            <!-- menu -->
+            <menu current="{{activeMenu}}" dataSource="{{menuData}}" onChange="onItemClick"/>
+        
+        </sider>
+        <layout>
+            <header>
+                <view class="user">
+                    <image class="user-avator" mode="widthFix" src="/assets/avator.png"/>
+                    <text class="user-nickname">{{userInfo.name}}</text>
+                </view>
+            </header>
+        
+            <content>
+                <page-header title="{{activeMenu.name}}" info="{{activeMenu.subTitle}}"/>
+    
+                <router-view>
+                    <button slot="button" />
+                    <progress slot="progress" />
+                </router-view>
+            </content>
         </view>
-    </view>
-    <view class="lb-content">
-        <view class="lb-header">
-            <view class="page-title">{{activeMenu.name}}</view>
-            <view class="page-info">{{activeMenu.subTitle}}</view>
-        </view>
-        <view class="lb-body">
-            <router-view>
-                <button slot="button" />
-                <progress slot="progress" />
-            </router-view>
-        </view>
-    </view>
+    </layout>
 </view>

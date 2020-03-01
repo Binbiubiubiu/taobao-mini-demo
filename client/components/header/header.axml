@@ -1,0 +1,3 @@
+<view class="lb-header">
+  <slot />
+</view>
