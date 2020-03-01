@@ -2,7 +2,7 @@ Component({
   mixins: [],
   data: {},
   props: {
-    active:{},
+    current:{},
     dataSource:[
       // {
       //   name:"菜单标题",

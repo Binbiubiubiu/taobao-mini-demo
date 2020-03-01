@@ -2,7 +2,7 @@
 
 淘宝小程序 练习 demo
 
-### 截图
+### 预览
 
 ![screenshot](./screenshot.png)
 
