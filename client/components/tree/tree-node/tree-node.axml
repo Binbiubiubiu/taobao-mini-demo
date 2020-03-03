@@ -1,0 +1,4 @@
+<view class="tree-node">
+   <checkbox data-path="{{path}}" data-depth="{{depth}}" indeterminate="{{indeterminate}}" checked="{{checked}}" onChange="handleTreeSelect">{{label}}</checkbox>
+   <tree-node a:for="{{content||[]}}" onChange="handleChange" id="{{item.id}}" label="{{item.label}}" checked="{{item.checked}}" indeterminate="{{item.indeterminate}}" content="{{item.children}}" path="{{`${path}.children[${index}]`}}" depth="{{depth+1}}" key="{{item.id}}"></tree-node>
+</view>

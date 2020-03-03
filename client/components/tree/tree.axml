@@ -1,0 +1,3 @@
+<view class="lb-tree">
+  <tree-node a:for="{{treeData}}" id="{{item.id}}" label="{{item.label}}" checked="{{item.checked}}" indeterminate="{{item.indeterminate}}" content="{{item.children}}" path="{{`[${index}]`}}" depth="{{0}}" onChange="handleCLick" key="{{item.id}}"/>
+</view>

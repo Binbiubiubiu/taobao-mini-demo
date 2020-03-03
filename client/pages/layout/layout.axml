@@ -27,6 +27,7 @@
                 <router-view>
                     <button slot="button" />
                     <progress slot="progress" />
+                    <tree slot="tree" />
                 </router-view>
             </content>
         </view>

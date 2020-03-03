@@ -10,6 +10,7 @@
         "menu":"/components/menu/menu",
     
         "button": "/blocks/button/button",
-        "progress": "/blocks/progress/progress"
+        "progress": "/blocks/progress/progress",
+        "tree": "/blocks/tree/tree"
     }
 }

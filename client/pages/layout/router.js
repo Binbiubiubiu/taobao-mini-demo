@@ -17,9 +17,18 @@ export default {
         subTitle: "进度条",
         icon:""
       }
+    },
+    {
+      path: "/tree",
+      component: "tree",
+      meta:{
+        name:"Tree",
+        subTitle: "树形选择",
+        icon:""
+      }
     }
   ],
   option: {
-    initPath: "/button"
+    initPath: "/tree"
   }
 };
